@@ -18,4 +18,8 @@ contract HelloWorld {
 
        emit UpdatedMessages(oldMessage, newMessage);
    }
+
+   function getMessage() external view returns (string memory) {
+        return message;
+    }
 }
